@@ -9,7 +9,7 @@ const Dex = () => {
   const [myPokemons, setMyPokemons] = useState([]);
 
   return (
-    <PokemonContext.Provider value={(myPokemons, setMyPokemons)}>
+    <PokemonContext.Provider value={{ myPokemons, setMyPokemons }}>
       <Dashboard myPokemons={myPokemons} setMyPokemons={setMyPokemons} />
       <PokemonList setMyPokemons={setMyPokemons} pokemonlist={MOCK_DATA} />
     </PokemonContext.Provider>
