@@ -8,7 +8,7 @@ const PokemonCard = ({ pokemon, onHandler, btn }) => {
       <Link to={`/pokemon-detail?id=${pokemon.id}`}>
         <img src={pokemon.img_url} />
         <h4>{pokemon.korean_name}</h4>
-        <p>{pokemon.id}</p>
+        <p>no. {pokemon.id}</p>
         <p>{pokemon.description}</p>
       </Link>
       <button onClick={() => onHandler(pokemon)}>
