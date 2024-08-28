@@ -1,8 +1,7 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const PokemonCard = ({ pokemon, onHandler, btn }) => {
-  const navigate = useNavigate();
   return (
     <li key={pokemon.id}>
       <Link to={`/pokemon-detail?id=${pokemon.id}`}>
