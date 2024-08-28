@@ -12,7 +12,7 @@ const PokemonDetail = () => {
     <article>
      <img src={targetPokemon.img_url} />
       <h4>{targetPokemon.korean_name}</h4>
-      <p>{targetPokemon.id}</p>
+      <p>no. {targetPokemon.id}</p>
       <p>{targetPokemon.types.join(", ")}</p>
       <p>{targetPokemon.description}</p>
       <button onClick={() => navigate("/dex")}>뒤로가기</button>
