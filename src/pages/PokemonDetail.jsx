@@ -9,11 +9,14 @@ const PokemonDetail = () => {
 
   const targetPokemon = MOCK_DATA.find((pokemon) => pokemon.id === targetId);
   return (
-    <div>
-      <img src={targetPokemon.img_url} />
+    <article>
+     <img src={targetPokemon.img_url} />
       <h4>{targetPokemon.korean_name}</h4>
+      <p>{targetPokemon.id}</p>
+      <p>{targetPokemon.types.join(", ")}</p>
+      <p>{targetPokemon.description}</p>
       <button onClick={() => navigate("/dex")}>뒤로가기</button>
-    </div>
+    </article>
   );
 };
 
